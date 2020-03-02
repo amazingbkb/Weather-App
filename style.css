@@ -6,7 +6,7 @@ body {
 }
 
 .wpBackground {
-    height: 100vh;
+    height: 100%;
     min-height: 500px;
     background: url(images/Tottori.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
