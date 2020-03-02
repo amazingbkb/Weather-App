@@ -193,8 +193,8 @@ function initGeolocation() {
 function success(position) {
 
     //ADD your keys here. My keys are located in a key.js file but are not included in the sample code for security reasons.
-    //var dsKey = "";
-    //var googleApiKey= "";
+    var dsKey = "207591d18d7be18a58b4b2557b02184e";
+    var googleApiKey= "AIzaSyCdcVAzbPGRez4jJplC2oxaOcpsx5v41lU";
     fetchLocation(googleApiKey, position.coords.latitude, position.coords.longitude)
     fetchWeatherReport(dsKey, position.coords.latitude, position.coords.longitude)
 }
