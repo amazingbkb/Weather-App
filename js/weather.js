@@ -152,28 +152,28 @@ function renderRow(dayTime, summary, tempHigh, colVal4) {
 function getICON(icon) {
     switch (icon) {
         case iconValue.CLEARDAY:
-            return "images/SunnyDay.png";
+            return "css/images/SunnyDay.png";
 
         case iconValue.CLOUDY:
         case iconValue.PARTLY_CLOUDY_DAY:
-            return "images/MostlySunny.png";
+            return "css/images/MostlySunny.png";
 
         case iconValue.CLEARNIGHT:
-            return "images/ClearMoon.png";
+            return "css/images/ClearMoon.png";
 
         case iconValue.PARTLY_CLOUDY_NIGHT:
-            return "images/CloudyMoon.png";
+            return "css/images/CloudyMoon.png";
         case iconValue.RAIN:
-            return "images/Rain.png";
+            return "css/images/Rain.png";
 
         case iconValue.SNOW:
-            return "images/SNOW.png";
+            return "css/images/SNOW.png";
 
         case iconValue.SLEET:
-            return "images/Sleet.png";
+            return "css/images/Sleet.png";
 
         default:
-            return "images/SunnyDay.png";
+            return "css/images/SunnyDay.png";
 
 
     }
@@ -193,7 +193,7 @@ function initGeolocation() {
 function success(position) {
 
     var dsKey = "207591d18d7be18a58b4b2557b02184e";
-    var googleApiKey= "AIzaSyCdcVAzbPGRez4jJplC2oxaOcpsx5v41lU";
+    var googleApiKey= "AIzaSyC-e3nPVQh_Ah3T9kdEg-IMdFibmmgRh6s";
     fetchLocation(googleApiKey, position.coords.latitude, position.coords.longitude)
     fetchWeatherReport(dsKey, position.coords.latitude, position.coords.longitude)
 }
